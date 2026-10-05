@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Q1 Project</title>
+
+	<style>
+
+		header{
+			background-color: #660C06;
+			height: 55px;
+			display: flex;
+			padding: 15px;
+			justify-content: space-between;
+		}
+
+		nav{
+			font-size: 18px;
+			margin-top: 13px;
+		}
+
+		a{
+			color: orangered;
+		}
+
+		.ict{
+			width: 55px;
+			height: 55px;
+		}
+
+		.maincontainer{
+			background-color: #FF7F7F;
+			height: 300px;
+			padding: 15px;
+			text-align: center;
+			align-content: center;
+		}
+
+		.picture{
+			width: 125px;
+			height: 175px;
+			
+		}
+
+		h1{
+			font-size: 30px;
+		}
+
+		.name{
+			color: #DB2A2A;
+		}
+
+		h4{
+			font-size: 20px;
+			color: #DB2A2A;
+
+		}
+
+		.aboutme{
+			height: 150px;
+			align-content: center;
+			text-align: center;
+			padding: 15px;
+			background-color: #C91010;
+		}
+
+		.aboutme h2{
+			text-align: center;
+			background-color:#FABDBD ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+		}
+
+		p{
+			font-size: 18px;
+			max-width: 650px;
+			text-align: center;
+			margin: auto;
+		}
+
+		.myworks{
+			height: 550px;
+			background-color: #de7f78 ;
+			text-align: center;
+			padding: 15px;
+		}
+		.myworks h2{
+			text-align: center;
+			background-color:#FABDBD ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+        }
+
+		.spotifyartists{
+			width: 200px;
+			height: 150px;
+
+		}
+
+		.spotifyproject h4{
+			text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            color: #DB2A2A;
+		}
+
+        .movie{
+			width: 200px;
+			height: 150px;
+		}
+
+		.movieproject h4{
+			text-align: center;
+            margin-top: 5px;
+            font-size: 20px;
+            color: #DB2A2A;
+		}
+		
+         .contactme{
+        	min-height: 800px;
+			background-color: #660C06;
+			text-align: center;
+			padding: 15px;
+        }
+
+        .contactme h2{
+			text-align: center;
+			background-color:#FABDBD ;
+			color: white;
+			border-radius: 5px;
+			font-size: 25px;
+			display: inline-block;
+            padding: 3px 30px;
+        }
+
+        form{
+        	background-color: lightgray;
+        	border-radius: 10px;
+        	padding: 25px;
+        	margin: 30px auto;
+        	text-align: left;
+        }
+
+        form label{
+        	font-size: 15px;
+        	color: #C91010;
+        	display: block;
+        	margin-bottom: 5px;
+        	font-weight: 600;
+        }
+
+        form input[type="text"]{
+        	font-size: 15px;
+        	padding: 10px;
+        	border: 2px solid #C91010;
+        	border-radius: 5px;
+        	border-color: #C91010;
+        	box-sizing: border-box;
+        	width: 100%;
+        }
+        form input[type="email"]{
+        	font-size: 15px;
+        	padding: 10px;
+        	border: 2px solid #C91010;
+        	border-radius: 5px;
+        	box-sizing: border-box;
+        	width: 100%;
+        	border-color: #C91010;
+        }
+        form select{
+        	font-size: 15px;
+        	padding: 10px;
+        	border: 2px solid #C91010;
+        	border-radius: 5px;
+        	box-sizing: border-box;
+        	width: 100%;
+        	border-color: #C91010;
+        }
+        form textarea{
+        	font-size: 15px;
+        	padding: 10px;
+        	border: 2px solid #C91010;
+        	border-radius: 5px;
+        	box-sizing: border-box;
+        	border-color: #C91010;
+        	width: 100%;
+        }
+
+      
+        form h5{
+        	font-size: 20px;
+        	color: #C91010;
+        	margin: 15px;
+        }
+
+        .radio{
+        	display: flex;
+        	gap: 20px;
+        }
+        .checkbox{
+        	display: flex;
+        	gap: 20px;
+        }
+
+        .radio label{
+        	font-size: 18px;
+        	color: black;
+        	display: inline;
+        	font-weight: normal;
+        }
+        .checkbox label{
+        	font-size: 18px;
+        	color: black;
+        	display: inline;
+        	font-weight: normal;
+        }
+
+        textarea{
+        	height: 50px;
+        }
+
+        button{
+        	font-size: 20px;
+        	color: white;
+        	background-color: #C91010;
+        	display: block;
+        	margin: 20px auto 0;
+        	padding: 10px 30px;
+        	border-radius: 5px;
+        }
+
+	</style>
+</head>
+<body>
+	<header>
+		 <img src="ict.png" class="ict">
+		 <nav>
+		 <a href="#ABOUTME">About Me</a>
+         <a href="#MYWORKS">My Works</a>
+         <a href="#CONTACTME">Contact Me</a>
+		 </nav>
+    </header>
+
+    <div class="maincontainer">
+    	<img src="picture.jpeg" class="picture">
+        <h1>Hi i'm <span class="name">Aidric Ang</span></h1>
+        <h4>An aspiring wed developer</h4>
+    </div>
+
+    <div id="ABOUTME" class="aboutme">
+    	<h2> ABOUT ME</h2>
+    	<p>Hi i'm Aidric, a guy that enjoys coding. I enjoy coding by making websites while learning how to code.</p>	
+    </div>
+
+    <div id="MYWORKS"class="myworks">
+    	<h2>MY WORKS</h2>
+    	<div class="projectspotify">
+    		<div class="spotifyproject">
+    		<img src="spotifyartists.png" class="spotifyartists">
+    		<h4> favorite artists</h4>
+    		</div>
+    	</div>
+
+           <div class="mywork2">
+    		<div class="movieproject">
+    		<img src="movie.png" class="movie">
+    		<h4>rate a movie </h4>
+    		</div>
+   		 </div>
+
+    <div id="CONTACTME" class="contactme">
+    	<h2>CONTACT ME</h2>
+    	  <form>
+
+            <label for="name">your name:</label>
+            <input type="text" id="name" name="name" placeholder="enter your name...">
+            <label for="email">your email:</label>
+            <input type="email" id="email" name="email" placeholder="enter your email...">
+            <h5>which application did you see me on?</h5>
+
+           <div class="radio">
+          <label> <input type="radio" name="source" value="facebook"> facebook</label>
+          <label> <input type="radio" name="source" value="X"> X </label>
+          <label> <input type="radio" name="source" value="Google"> Google </label> </div>
+
+
+            <label for="rating">rate my portfolio:</label>
+
+            <select id="rating" name="rating">
+            	<option>rate here! </option>
+            	<option value="1">1 </option>
+            	<option value="2">2 </option>
+                <option value="3">3 </option>
+                <option value="4">4 </option>
+                <option value="5">5 </option>
+                </select>
+            
+            <label for="feedback"> comments or suggestions?</label>
+            <textarea id="feedback" name="feedback" placeholder="enter your comments or suggestions..."
+            ></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+		
+</body>
+</html>
